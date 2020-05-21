@@ -21,6 +21,7 @@
 	<modules>
 		<module>server</module>
 		<module>client</module>
+		<module>discovery-service</module>
 	</modules>
 
 	<properties>
