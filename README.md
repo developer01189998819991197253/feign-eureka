@@ -1,13 +1,17 @@
 # feign-eureka
 Example of using feign with eureka
 
-Assumes eureka (from [spring-cloud-samples](https://github.com/spring-cloud-samples/eureka)) is running on http://localhost:8761
-
 ## building
 
-`mvnw package`
+`mvn install`
 
-## hello server
+## Run Discovery Service
+
+```
+java -jar discovery-service/target/discovery-service-0.0.1-SNAPSHOT-exec.jar
+```
+Verify it has started on localhost:8761
+## Hello Server
 
 run `java -jar server/target/feign-eureka-hello-server-0.0.1-SNAPSHOT.jar`
 
@@ -15,7 +19,7 @@ verify it is functioning at [http://localhost:7111](http://localhost:7111)
 
 You should see `Hello World: HelloServer:myhostname:7111`
 
-## hello client
+## Hello Client
 
 run `java -jar client/target/feign-eureka-hello-client-0.0.1-SNAPSHOT.jar`
 
@@ -23,7 +27,7 @@ verify it is functioning at [http://localhost:7211](http://localhost:7211)
 
 You should see `Hello World: HelloServer:myhostname:7111`
 
-### hellow client error
+### Hello Client Error
 
 You may see an error while the eureka/ribbon caches warm up similar to the following:
 
