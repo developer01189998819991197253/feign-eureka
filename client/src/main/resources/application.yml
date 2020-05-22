@@ -9,7 +9,7 @@ eureka:
   password: password
   client:
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
+      defaultZone: http://user:${eureka.password}@127.0.1.1:8761/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
@@ -19,12 +19,3 @@ eureka:
 endpoints:
   restart:
     enabled: true
-
-
-#HelloServer:
-#  ribbon:
-#    listOfServers: localhost:7111
-#
-#ribbon:
-#  eureka:
-#    enabled: false
