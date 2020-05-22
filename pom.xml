@@ -3,26 +3,25 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.test</groupId>
+
+	<groupId>org.chrisco.com</groupId>
 	<artifactId>feign-eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>feign-eureka</name>
+	<description>Some feign stuff</description>
 	<packaging>pom</packaging>
 
-	<name>feign-eureka</name>
-	<description>Demo project for Spring Cloud</description>
-
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.5.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-
 	<modules>
+		<module>discovery-service</module>
 		<module>server</module>
 		<module>client</module>
-		<module>discovery-service</module>
 	</modules>
+
+	<parent>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<version>2.2.0.RELEASE</version>
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
