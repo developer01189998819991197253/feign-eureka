@@ -28,7 +28,7 @@ public class HelloServerApplication {
 		ServiceInstance selectedInstance = instances
 				.get(new Random().nextInt(instances.size()));
 		return "Hello World: " + selectedInstance.getServiceId() + ":" + selectedInstance
-				.getHost() + ":" + selectedInstance.getPort();
+				.getHost() + ":" + selectedInstance.getPort() + ":" + selectedInstance.getUri();
 	}
 
 	public static void main(String[] args) {
