@@ -1,14 +1,17 @@
 # feign-eureka
 Example of using feign with eureka
 
+## cloning
+git clone ssh://git@bitbucket.tdx.oneit.gov.uk:7999/pal/feign-eureka.git
+
 ## building
 
 `mvn install`
 
-## Run Discovery Service
+## Run Eureka
 
 ```
-java -jar discovery-service/target/discovery-service-0.0.1-SNAPSHOT-exec.jar
+java -jar eureka-0.0.1-SNAPSHOT.jar
 ```
 Verify it has started on localhost:8761
 ## Hello Server
